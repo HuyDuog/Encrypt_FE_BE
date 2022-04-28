@@ -1,0 +1,74 @@
+<!--NG-ZORRO -->
+<body style="margin-top: 5px;">
+  <div class="container">
+    <!-- <form #userPost="ngForm"  (ngSubmit)="onSubmit(userPost.value)"> -->
+      <h1 class="title" style="text-align:center; font-size:40px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">Convert</h1>
+      <form #userPost="ngForm" >
+        <div class="form-group">
+          <label style="color:indianred">Nhập dữ liệu</label>
+          <input type="text" class="form-control" ngModel name="abc">
+        </div>
+
+        <div class="form-group">
+          <label style="color:indianred">Xuất dữ liệu</label>
+          <input type="text"  class="form-control" value="{{DisplayBase64}}">
+        </div>
+        <div>
+          <div class="btn-group">
+            <button class="btn btn-danger btn-tone m-r-5" type="reset">Reset</button>
+          </div>
+          <hr>
+<div class="table-responsive">
+    <table class="table table-bordered" style="text-align: center;">
+        <thead>
+            <tr >
+                <th>Base64</th>
+                <th>Hex</th>
+                <th>Binary</th>
+                <th>Byte</th>
+                <th>Another</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><button type="submit" class="btn btn-primary btn-tone  m-r-4" (click)="onChangetoBase64(userPost.value)" >String to Base64</button></th>
+                <td><button type="submit" class="btn btn-primary btn-tone  m-r-4" (click)="onClickChangetoHex(userPost.value)" >String to Hex</button></td>
+                <td><button type="submit" class="btn btn-primary btn-tone  m-r-4" (click)="onClickChangetoBinary(userPost.value)" >String to Binary</button></td>
+                <td><button type="submit" class="btn btn-primary btn-tone  m-r-4" (click)="onClickStringtoByte(userPost.value)" >String to Byte</button></td>
+                <td><button type="submit" class="btn btn-primary btn-tone  m-r-4" (click)="onClickChangetoWords(userPost.value)" >Int to Words</button></td>
+            </tr>
+            <tr>
+                <th><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBase64toString(userPost.value)" >Base64 to String</button></th>
+                <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickHextoString(userPost.value)" >Hex to String</button></td>
+                <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBinarytoString(userPost.value)" >Binary to String</button></td>
+                <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBytetoString(userPost.value)" >Byte to String</button></td>
+            </tr>
+            <tr>
+              <th><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBase64toHex(userPost.value)" >Base64 to Hex</button></th>
+                <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickHextoBase64(userPost.value)" >Hex to Base64</button></td>
+                <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBinarytoBase64(userPost.value)" >Binary to Base64</button></td>
+                <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBytetoBase64(userPost.value)" >Byte to Base64</button></td>
+            </tr>
+            <tr>
+              <th><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBase64toBinary(userPost.value)" >Base64 to Binary</button></th>
+              <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickHextoBinary(userPost.value)" >Hex to Binary</button></td>
+              <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBinarytoHex(userPost.value)" >Binary to Hex</button></td>
+              <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBytetoBinary(userPost.value)" >Byte to Binary</button></td>
+          </tr>
+          <tr>
+            <th><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBase64toByte(userPost.value)" >Base64 to Byte</button></th>
+            <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickHextoByte(userPost.value)" >Hex to Byte</button></td>
+            <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBinarytoByte(userPost.value)" >Binary to Byte</button></td>
+            <td><button type="submit" class="btn btn-secondary btn-tone  m-r-4" (click)="onClickBytetoHex(userPost.value)" >Byte to Hex</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+        </div>
+
+      <div >
+      </div>
+    </form>
+  </div>
+</body>
+
